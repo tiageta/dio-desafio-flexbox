@@ -42,10 +42,12 @@ body {
 .welcome-page {
   width: 100%;
   display: flex;
+  justify-content: center;
   gap: 2rem;
 }
 .main-content {
   width: 25rem;
+  height: var(--phone-bg-h);
 }
 .group {
   width: 100%;
@@ -61,6 +63,12 @@ body {
   padding: 1.25rem;
   margin-top: 1.25em;
 }
+@media (max-width: 27em) {
+  .box {
+    border: none;
+    background-color: var(--bg-color-main);
+  }
+}
 
 /* Phone image */
 .phone-bg {
@@ -71,6 +79,11 @@ body {
   background-size: cover;
   background-position: center;
   image-rendering: pixelated;
+}
+@media (max-width: 55em) {
+  .phone-bg {
+    display: none;
+  }
 }
 .phone-wrapper {
   width: var(--phone-slide-w);
