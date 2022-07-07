@@ -168,8 +168,9 @@ body {
 }
 .app-store img {
   cursor: pointer;
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: 0;
+  flex-grow: 1;
   height: auto;
 }
 
