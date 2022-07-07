@@ -187,3 +187,82 @@ body {
   text-decoration: none;
   color: var(--color-grey);
 }
+
+/* Photo slides */
+#slide-1,
+#slide-2,
+#slide-3 {
+  animation: 15s ease infinite both;
+}
+
+#slide-1 {
+  animation-name: slide-1;
+}
+
+#slide-2 {
+  animation-name: slide-2;
+}
+
+#slide-3 {
+  animation-name: slide-3;
+}
+
+@keyframes slide-1 {
+  0% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 1;
+  }
+  32% {
+    opacity: 0;
+  }
+  94% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-2 {
+  0% {
+    opacity: 0;
+  }
+  27% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-3 {
+  0% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 1;
+  }
+  93% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
